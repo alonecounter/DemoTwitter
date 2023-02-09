@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F5EAE96299562AC00DFD38B /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EAE95299562AC00DFD38B /* UserRowView.swift */; };
+		4FA18DCC29955558007D0AAE /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA18DCB29955558007D0AAE /* TweetFilterViewModel.swift */; };
 		4FCC20402993EB780034BDA0 /* TwitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC203F2993EB780034BDA0 /* TwitterApp.swift */; };
 		4FCC20422993EB780034BDA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC20412993EB780034BDA0 /* ContentView.swift */; };
 		4FCC20442993EB790034BDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC20432993EB790034BDA0 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F5EAE95299562AC00DFD38B /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		4FA18DCB29955558007D0AAE /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		4FCC203C2993EB780034BDA0 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC203F2993EB780034BDA0 /* TwitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterApp.swift; sourceTree = "<group>"; };
 		4FCC20412993EB780034BDA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5EAE912995621E00DFD38B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC2061299401F00034BDA0 /* ExploreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F5EAE922995622900DFD38B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4F5EAE932995628C00DFD38B /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EAE95299562AC00DFD38B /* UserRowView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		4F5EAE942995629400DFD38B /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC20572993EF640034BDA0 /* TweetRowView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
 		4FCC20332993EB780034BDA0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +158,8 @@
 		4FCC20512993EC500034BDA0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC20572993EF640034BDA0 /* TweetRowView.swift */,
+				4F5EAE942995629400DFD38B /* Tweets */,
+				4F5EAE932995628C00DFD38B /* Users */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -179,7 +215,8 @@
 		4FCC205F2994017E0034BDA0 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC2061299401F00034BDA0 /* ExploreView.swift */,
+				4F5EAE922995622900DFD38B /* ViewModels */,
+				4F5EAE912995621E00DFD38B /* Views */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -196,6 +233,7 @@
 		4FCC2067299402F90034BDA0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4FA18DCB29955558007D0AAE /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -282,9 +320,11 @@
 				4FCC206A299403580034BDA0 /* ProfileView.swift in Sources */,
 				4FCC20422993EB780034BDA0 /* ContentView.swift in Sources */,
 				4FCC20582993EF640034BDA0 /* TweetRowView.swift in Sources */,
+				4FA18DCC29955558007D0AAE /* TweetFilterViewModel.swift in Sources */,
 				4FCC20562993EC870034BDA0 /* FeedView.swift in Sources */,
 				4FCC20402993EB780034BDA0 /* TwitterApp.swift in Sources */,
 				4FCC2062299401F00034BDA0 /* ExploreView.swift in Sources */,
+				4F5EAE96299562AC00DFD38B /* UserRowView.swift in Sources */,
 				4FCC205B2993FFC80034BDA0 /* MainTabView.swift in Sources */,
 				4FCC2064299402090034BDA0 /* NotificationsView.swift in Sources */,
 			);
@@ -343,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -397,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -422,6 +462,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +491,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
